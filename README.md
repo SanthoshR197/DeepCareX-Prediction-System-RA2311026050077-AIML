@@ -20,9 +20,21 @@ This project is a modernized and containerized version of the original **DeepCar
 In this version of the project, we focused on **Modernization** and **Deployment Readiness**:
 
 1.  **Containerization**: Wrapped the entire Flask application, its dependencies, and the ML models into a Docker container for consistent cross-platform execution.
-2.  **Infrastructure-as-Code**: Created specialized scripts (`containerize.ps1`, `Dockerfile`) to automate the build and deployment process.
-3.  **Cloud Readiness**: Published the containerized image to **Docker Hub** and updated the codebase for seamless integration with GitHub.
-4.  **Optimized Workflow**: Streamlined the database initialization and server startup within the container environment.
+2.  **LLM Integration**: Integrated an **Advanced Medical AI Agent** powered by **Llama 3.1** via **Groq Cloud**. This agent provides real-time explanations of diagnoses and actionable health advice.
+3.  **Infrastructure-as-Code**: Created specialized scripts (`containerize.ps1`, `Dockerfile`) to automate the build and deployment process.
+4.  **Cloud Readiness**: Published the containerized image to **Docker Hub** and updated the codebase for seamless integration with GitHub.
+
+---
+
+## 🤖 Advanced AI Medical Agent
+
+Beyond standard classification, DeepCareX features a high-performance **Medical AI Assistant**:
+- **Powered by**: Llama 3.1 (8B Instant)
+- **Inference Engine**: Groq LPU (Language Processing Unit) for near-instant response times.
+- **Capabilities**: 
+    - Explains complex diagnostic results in simple language.
+    - Provides personalized lifestyle and precautionary health tips.
+    - Interactive chat interface for medical queries.
 
 ---
 
@@ -50,6 +62,7 @@ Once the container is running, open your browser and navigate to:
 
 - **Backend**: Flask (Python 3.10)
 - **AI/ML**: TensorFlow, Keras, XGBoost, Scikit-Learn
+- **LLM**: Llama 3.1 (via Groq Cloud)
 - **Database**: SQLite3
 - **Frontend**: HTML5, CSS3, Bootstrap 5
 - **DevOps**: Docker, GitHub Actions
